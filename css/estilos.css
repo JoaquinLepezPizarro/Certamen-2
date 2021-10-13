@@ -1,0 +1,100 @@
+@charset "UTF-8";
+#datos1 {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+#imagen {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  margin-top: 1%;
+}
+
+#nombre1 {
+  height: 50px;
+}
+
+#fecha1 {
+  height: 50px;
+}
+
+#link1 {
+  height: 50px;
+}
+
+#datos2 {
+  border: 1px solid black;
+  width: 250px;
+  height: 250px;
+  margin-left: 20px;
+}
+
+#digitoEstatura2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#digitoEstatura {
+  margin-left: 50%;
+}
+
+#digitoPeso2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#digitoPeso {
+  margin-left: 60%;
+}
+
+#digitoFrecuencia2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#digitoFrecuencia {
+  margin-left: 50%;
+}
+
+#colIzquierda2 {
+  margin-left: 10%;
+}
+
+#diple {
+  margin-left: -10%;
+  font-size: 20px;
+  font-weight: 999;
+}
+
+#mas {
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+#datosGrupo3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#datosClinicos {
+  border: 1px solid black;
+  padding: 10px;
+  list-style-type: none;
+}
+
+#columnaInformación {
+  list-style-type: none;
+}
+/*# sourceMappingURL=estilos.css.map */

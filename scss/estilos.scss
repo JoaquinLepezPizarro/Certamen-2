@@ -1,0 +1,103 @@
+//@mixin auxUL {
+//    height: $tamDatos;
+//}
+
+$tamDatos: 50px;
+$auxMargin: 50%;
+
+//ul
+#datos1 {
+    list-style-type: none;
+    display: flex;
+    
+}
+
+//IMAGEN
+img {
+    width: 100%;
+    height: 100%;
+}
+
+//BLOQUE IMAGEN
+#imagen {
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    margin-top: 1%;
+}
+
+#nombre1 {
+    height: $tamDatos;
+}
+
+#fecha1 {
+    height: $tamDatos;
+}
+
+#link1 {
+    height: $tamDatos;
+}
+
+//BLOQUE 2
+#datos2 {
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
+    margin-left: 20px;
+}
+
+//DIGITO ESTATURA
+#digitoEstatura2 {
+    display:flex;
+}
+
+#digitoEstatura {
+    margin-left: $auxMargin;
+}
+
+//DIGITO PESO
+#digitoPeso2 {
+    display:flex;
+}
+
+#digitoPeso {
+    margin-left: 60%;
+}
+
+//DIGITO FRECUENCIA
+#digitoFrecuencia2 {
+    display:flex;
+}
+
+#digitoFrecuencia {
+    margin-left: $auxMargin;
+}
+
+#colIzquierda2 {
+    margin-left: 10%;
+}
+
+#diple {
+    margin-left: -10%;
+    font-size: 20px;
+    font-weight: 999;
+}
+
+#mas {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+#datosGrupo3 {
+    display: flex;
+}
+
+#datosClinicos {
+    border: 1px solid black;
+    padding: 10px;
+    list-style-type: none;
+}
+
+#columnaInformación {
+    list-style-type: none;
+}

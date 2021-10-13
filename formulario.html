@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Clínica</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+        <!--framework de bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+        <!--Estilos-->
+        <link href="css/estilos.css" rel="stylesheet">
+
+    </head>
+    <body>        
+        <div class="container-fluid">
+            <form id=formulario validate>
+                <h1>Información</h1>
+                    <ul id="columnaInformación">
+                        <!----------------------------------NOMBRE COMPLETO---------------------------------->
+                        <li>
+                            <div id="col">
+                                <label for="nombreCompleto" class="form-label">Nombre Completo</label><br>
+                            </div>
+                            <div>
+                                <input type="text" class="form-control" id="nombreCompleto" value="Pepito Pérez" required>    
+                                <div class="valid-feedback">Nombre validado</div>
+                                <div class="invalid-feedback">Debe ingresar su nombre completo</div>
+                            </div>
+                        </li>
+                        <!----------------------------------EDAD---------------------------------->
+                        <li>
+                            <div id="col">
+                                <label for="edad" class="form-label">Edad</label><br>
+                            </div>
+                            <div>
+                                <input type="text" class="form-control" id="nombreCompleto" maxlength="3" pattern="[0-9]{1,2,3}" value="43" required>    
+                                <div class="valid-feedback">Edad validada</div>
+                                <div class="invalid-feedback">Debe ingresar su edad</div>
+                            </div>
+                        </li>
+                        <!----------------------------------GÉNERO---------------------------------->
+                        <li>
+                            <div id="col">
+                                <label for="edad" class="form-label">Género</label><br>
+                            </div>
+                            <div>
+                                <select class="form-select" aria-label="Default select example">
+                                    <!--<option value="" disabled selected>Seleccione un género</option>-->
+                                    <option value="3">Sin definir</option>
+                                    <option value="1">Hombre</option>
+                                    <option value="2">Mujer</option>
+                                </select>
+                            </div>
+                        </li>
+                        <!----------------------------------FECHA DE NACIMIENTO---------------------------------->
+                        <li>
+                            <div id="col">
+                                <label for="fechaDeNacimiento" class="form-label">Fecha de Nacimiento</label><br>
+                            </div>
+                            <div>
+                                <input type="date" class="form-control" id="fechaDeNacimiento" placeholder="Ingrese su fecha de nacimiento"  required>    
+                                <div class="valid-feedback">Fecha de nacimiento validada</div>
+                                <div class="invalid-feedback">Debe ingresar su fecha de nacimiento</div>
+                            </div>
+                        </li>
+                        <!----------------------------------CORREO ELECTRÓNICO---------------------------------->
+                        <li>    
+                            <div class="col">
+                                <label for="email" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" value="pepito.perez@email.com" required>
+                                <div class="valid-feedback">
+                                  Correo Electrónico
+                                </div>
+                                <div class="invalid-feedback">
+                                    Requerido y de tipo correo electrónico
+                                </div>
+                              </div>
+                        </li>
+                        <!----------------------------------NÚMERO TELEFÓNICO---------------------------------->
+                        <li>
+                            <div class="col">
+                                <label for="telefono" class="form-label">Telefono</label>
+                                <input type="tel" class="form-control" id="telefono" value="1111111111" required>
+                                <div class="valid-feedback">
+                                  Telefono
+                                </div>
+                                <div class="invalid-feedback">
+                                  Campo requerido
+                                </div>
+                              </div>
+                        </li>
+                        <!----------------------------------RUT---------------------------------->
+                        <li>
+                            <label for="rut" class="form-label">RUT</label><br>
+                            <input type="text" class="form-control" id="rut"  maxlength="10" pattern="[0-9]{7,8}[-]{1}[0-9Kk]{1}" value="11111111-1" required>
+                            <div class="valid-feedback">Rut en formato valido</div>
+                            <div class="invalid-feedback">Debe ingresar su rut en el formato solicitado</div>
+                        </li>
+                        <!----------------------------------REGIÓN---------------------------------->
+                        <li>
+                            <div id="col">
+                                <label for="region" class="form-label">Región</label><br>
+                            </div>
+                            <div>
+                                <select id="region" size="1" onchange="comRegion(this.value)">
+                                    <option value="" disabled selected>Seleccione region</option>
+                                    <option>Metropolitana</option>
+                                    <option>Valparaiso</option>
+                                </select>
+                            </div>
+                        </li>
+                        <!----------------------------------COMUNA---------------------------------->
+                        <li>
+                            <div id="col">
+                                <label for="comuna" class="form-label">Comuna</label><br>
+                            </div>
+                            <div>
+                                <select id="comuna" size="1" >
+                                    <option value="" disabled selected>Seleccione comuna</option>
+                                    <option></option>
+                                </select>
+                            </div>
+                        </li>
+                    </ul>
+                <!----------------------------------ACTUALIZAR---------------------------------->
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Actualizar</button>
+                </div>
+                <a href="index.html">Volver</a>
+            </form>
+        </div>
+        <script src="js/inicio.js" async></script>
+        
+    </body>
+</html>
